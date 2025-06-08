@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Line Buddy – Because Every Second Matters</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #111;
+    }
+    header {
+      background-color: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    h1, h2 {
+      margin: 0 0 1rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: #0f172a;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      margin-bottom: 1.5rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #10b981;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .tagline {
+      font-size: 1.3rem;
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+    nav {
+      background-color: #e2e8f0;
+      text-align: center;
+      padding: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #0f172a;
+      font-weight: 600;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f3f4f6;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Line Buddy</h1>
+    <p class="tagline">Because Every Second Matters.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+    <a href="#referral">Referral</a>
+    <a href="#pricing">Pricing</a>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <h2>Book Your Line Buddy</h2>
+      <p><em>Life chhoti hai, line badi. line chhodo life pakdo. BOOK YOUR LINE BUDDY NOW 🙂</em></p>
+      <form>
+        <label>Your Name:</label>
+        <input type="text" name="name" required>
+        <label>Phone Number:</label>
+        <input type="tel" name="phone" required>
+        <label>Upload ID for Verification:</label>
+        <input type="file" name="idUpload" required>
+        <label>Where Do You Need a Buddy (e.g., South Delhi, Saket, Lajpat Nagar)?</label>
+        <input type="text" name="location" required>
+        <label>Upload Payment Proof (if prepaid):</label>
+        <input type="file" name="paymentProof">
+        <p>Tip Option (Optional):</p>
+        <select>
+          <option value="none">Select Tip</option>
+          <option value="20">₹20</option>
+          <option value="50">₹50</option>
+          <option value="tea">Chai ☕</option>
+        </select>
+        <p>Pay via UPI: <strong>8949557447@PTSBI</strong></p>
+        <p><strong>Referral Code?</strong> Use it below and get 50% off your first booking!</p>
+        <input type="text" name="referral" placeholder="Enter Referral Code">
+        <button type="submit">Request Line Buddy</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Become a Line Buddy</h2>
+      <p><em>Waqt toh sabke paas hota hai… par Line Buddy usse paisa banata hai! ⏳💸</em></p>
+      <form>
+        <label>Your Name:</label>
+        <input type="text" required>
+        <label>Phone Number:</label>
+        <input type="tel" required>
+        <label>Location (City/Area):</label>
+        <input type="text" required>
+        <label>UPI ID (to receive payments):</label>
+        <input type="text">
+        <label>Upload ID Proof:</label>
+        <input type="file" required>
+        <label>Upload Your Picture (optional):</label>
+        <input type="file">
+        <button type="submit">Join as Line Buddy</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2 id="pricing">✅ STANDARD SERVICE RATES</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Time Duration</th>
+            <th>Customer Pays</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Up to 15 minutes</td>
+            <td>₹50</td>
+          </tr>
+          <tr>
+            <td>Up to 30 minutes</td>
+            <td>₹70</td>
+          </tr>
+          <tr>
+            <td>Up to 45 minutes</td>
+            <td>₹90</td>
+          </tr>
+          <tr>
+            <td>Up to 60 minutes</td>
+            <td>₹110</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>🕒 ADD-ON CHARGES (Optional)</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Add-On</th>
+            <th>Extra Fee (₹)</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🚨 Urgent Booking</td>
+            <td>+₹30</td>
+            <td>Request made less than 30 mins in advance</td>
+          </tr>
+          <tr>
+            <td>🌙 Night Service (9PM–7AM)</td>
+            <td>+₹40</td>
+            <td>For safety, extra incentive for Buddies</td>
+          </tr>
+          <tr>
+            <td>⏳ Extra Waiting Time</td>
+            <td>₹3/min</td>
+            <td>If customer is late beyond booked slot</td>
+          </tr>
+          <tr>
+            <td>🎉 Festival/Sunday Charge</td>
+            <td>+₹50</td>
+            <td>Optional based on buddy availability & crowd</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card" id="referral">
+      <h2>Referral Program</h2>
+      <p>Refer your friend and both get 50% off your first booking. Share your referral code after signing up!</p>
+    </div>
+
+    <div class="card">
+      <h2>Live Buddy Tracking (Coming Soon)</h2>
+      <p>Real-time map-based tracking of Buddies will be available soon.</p>
+    </div>
+
+    <div class="card">
+      <h2>Review a Buddy</h2>
+      <form>
+        <label>Buddy Name:</label>
+        <input type="text">
+        <label>Your Experience:</label>
+        <textarea rows="4"></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Terms & Conditions for Buddies</h2>
+      <ul>
+        <li>Be ethical and polite at all times</li>
+        <li>Follow instructions given by client</li>
+        <li>Never engage in illegal or dishonest acts</li>
+        <li>Maintain punctuality and discipline</li>
+        <li>Carry valid ID during each task</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Owner Access Panel (Only You)</h2>
+      <p><em>Login to access:</em></p>
+      <ul>
+        <li>See all Buddy Applications</li>
+        <li>See all Customer Requests</li>
+        <li>Download Uploaded Proofs</li>
+      </ul>
+      <p><strong>[This will require backend setup or Google Forms linked to your email]</strong></p>
+    </div>
+
+    <div class="card" id="about">
+      <h2>About Us</h2>
+      <p>Line Buddy is an innovative service based in India, created to help people save their time by hiring someone to stand in lines for them. Whether you're busy or physically unable to wait, we’ve got your back. Our mission is simple: value your time like never before.</p>
+      <p><strong>Founder:</strong> Deepak Kumawat</p>
+    </div>
+
+    <div class="card" id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: linebuddyindia@gmail.com</p>
+      <p>WhatsApp: +91 8949557447, +91 8742037670</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Line Buddy | Founded by Deepak Kumawat | Email: linebuddyindia@gmail.com | WhatsApp: +91 8949557447
+  </footer>
+</body>
+</html>
